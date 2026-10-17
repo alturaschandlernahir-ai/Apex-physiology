@@ -1,0 +1,192 @@
+/* Basic page setup */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header & Menu */
+header {
+    background-color: #000000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e50914;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #e50914;
+}
+
+/* Banner section */
+.hero {
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Titles & Text boxes */
+.title-box {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Grid layout for Cards */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tag {
+    color: #e50914;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn, button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background-color: #b80710;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    margin-top: 40px;
+}
+.about-card {
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+}
+.page-title-section {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+/* ABOUT US SECTION */
+.about-section {
+    background: #111;
+    color: white;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about-subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* TWO BORDERED BOXES */
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* BOX DESIGN */
+.about-box {
+    flex: 1;
+    padding: 30px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background: #1b1b1b;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.about-box:hover {
+    border-color: white;
+    transform: translateY(-5px);
+}
+
+/* BOX HEADINGS */
+.about-box h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* BOX INFORMATION */
+.about-box p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-section h1 {
+        font-size: 30px;
+    }
+}
